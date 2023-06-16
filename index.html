@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sound Designer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="blocVideo">
+      <div class="videoContainer">
+        <video
+          autoplay="autoplay"
+          muted=""
+          src="./assets/video/Pub_Novarosa_AdobeExpress.mp4"
+        ></video>
+      </div>
+      <div class="buttonContainer">
+        <button id="btnPlay">
+          <img src="./assets/logo/playButton.png" alt="Play button" />
+        </button>
+        <button id="btnPause">
+          <img src="assets/logo/pauseButton.png" alt="Pause Button" />
+        </button>
+      </div>
+      <div class="audioContainer">
+        <div class="audioTracks">
+          <div>
+            <input type="checkbox" name="Stem direct" id="stemDirect" />
+            <label for="stemDirect">Voix</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Stem ambiances" id="stemAmb" />
+            <label for="stemAmb">Ambiances</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Stem effets" id="stemEffets" />
+            <label for="stemEffets">Effets</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Stem bruitage" id="stemBruitage" />
+            <label for="stemBruitage">Bruitage</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Stem music" id="stemMusic" />
+            <label for="stemMusic">Musique</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

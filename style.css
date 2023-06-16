@@ -1,0 +1,81 @@
+:root {
+  --colorPink: rgb(255, 188, 192);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blocVideo {
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.videoContainer {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* transform: translateY(-100px); */
+}
+
+.videoContainer video {
+  height: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  height: 5%;
+  position: relative;
+}
+
+.buttonContainer button {
+  display: flex;
+  width: 2%;
+  background: transparent;
+  border: none;
+}
+
+.buttonContainer img {
+  width: 100%;
+}
+
+#btnPlay {
+  position: absolute;
+  right: 25%;
+}
+
+#btnPause {
+  position: absolute;
+  right: 22%;
+}
+
+.audioContainer {
+  height: 30%;
+  color: white;
+}
+
+.audioContainer::before {
+  content: "";
+  background: white;
+  height: 1px;
+  width: 25%;
+  position: absolute;
+  bottom: 30%;
+  left: 20%;
+}
+
+.audioTracks {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  transform: translateX(15%);
+}
